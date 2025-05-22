@@ -18,4 +18,9 @@ public class PortfolioEntry {
     private double averagePrice;
     @ManyToOne
     private User user;  // owning user
+
+    public PortfolioEntry(String key, Integer value) {
+        this.stockSymbol = key;
+        this.quantity = value;
+    }
 }
